@@ -37,7 +37,7 @@ extrato <- tibble(
     )
   )
 
-# 1. GRÁFICO 1: Balanço Mensal (Receitas vs Despesas)
+# Balanço Mensal (Receitas vs Despesas)
 resumo_geral <- extrato %>%
   group_by(Tipo) %>%
   summarise(Total = sum(Valor_Abs))
@@ -59,7 +59,7 @@ ggplot(resumo_geral, aes(x = Tipo, y = Total, fill = Tipo)) +
 
 ggsave("balanco_mensal.png", width = 8, height = 5, dpi = 300)
 
-# 2. GRÁFICO 2: Detalhamento de Gastos por Categoria
+# Detalhamento de Gastos por Categoria
 despesas_categoria <- extrato %>%
   filter(Tipo == "Despesa") %>%
   group_by(Categoria) %>%
