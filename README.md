@@ -35,3 +35,9 @@ Os gráficos são salvos automaticamente na pasta do projeto em alta resolução
 2. **Gastos por Categoria (`gastos_por_categoria.png`)**: Ranking das categorias onde houve maior saída de recursos.
 
 ---
+
+## 📌 Como Executar
+
+1. **Prerequisitos:** Certifique-se de ter o R e o RStudio instalados com os pacotes `tidyverse`, `ggplot2` e `scales`.
+2. **Arquivo de entrada:** Exporte seu extrato bancário no formato `.ofx` do banco e salve na raiz do projeto como `extrato.ofx`.
+3. **Execução:** Abra o projeto no RStudio e execute o script `.R` para gerar os gráficos na pasta do projeto.
